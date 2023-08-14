@@ -14,24 +14,26 @@
 */	
 -- creating tables
 
+-- creating tables
+
 -- titles table
 
 CREATE TABLE Titles (
     title_id VARCHAR PRIMARY KEY,
-    title VARCHAR (25) NOT NULL
+    title VARCHAR(25) NOT NULL
 );
 
 -- departments table
 
 CREATE TABLE Departments (
     dept_no VARCHAR PRIMARY KEY,
-    dept_name VARCHAR NOT NULL
+    dept_name VARCHAR(50)
 );
 
 -- employees table 
 
 CREATE TABLE Employees (
-    emp_no INTEGER PRIMARY KEY,
+    emp_no INT PRIMARY KEY,
     emp_title_id VARCHAR REFERENCES Titles(title_id),
     birth_date DATE,
     first_name VARCHAR(30),
@@ -43,24 +45,23 @@ CREATE TABLE Employees (
 -- salaries
 
 CREATE TABLE Salaries (
-    emp_no INTEGER REFERENCES Employees(emp_no),
-    salary INTEGER NOT NULL,
+    emp_no INT REFERENCES Employees(emp_no),
+    salary INT NOT NULL,
     PRIMARY KEY (emp_no)
 );
 
 -- dept_emp
 
 CREATE TABLE Dept_Emp (
-    emp_no INTEGER REFERENCES Employees(emp_no),
-    dept_no VARCHAR (25) REFERENCES Departments(dept_no),
+    emp_no INT REFERENCES Employees(emp_no),
+    dept_no VARCHAR(25) REFERENCES Departments(dept_no),
     PRIMARY KEY (emp_no, dept_no)
 );
 
 -- dept_manager table
 
 CREATE TABLE Dept_Manager (
-    emp_no INTEGER REFERENCES Employees(emp_no),
-    dept_no VARCHAR (25) REFERENCES Departments(dept_no),
+    emp_no INT REFERENCES Employees(emp_no),
+    dept_no VARCHAR(25) REFERENCES Departments(dept_no),
     PRIMARY KEY (emp_no, dept_no)
 );
-
