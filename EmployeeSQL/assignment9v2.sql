@@ -58,3 +58,4 @@ CREATE TABLE Dept_Manager (
     dept_no VARCHAR(30) REFERENCES Departments(dept_no) NOT NULL,
     PRIMARY KEY (emp_no, dept_no)
 );
+
