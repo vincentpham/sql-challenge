@@ -12,7 +12,6 @@
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False;
 */	
--- creating tables
 
 -- creating tables
 
