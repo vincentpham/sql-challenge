@@ -53,7 +53,7 @@ CREATE TABLE Salaries (
 
 CREATE TABLE Dept_Emp (
     emp_no INT REFERENCES Employees(emp_no),
-    dept_no VARCHAR(25) REFERENCES Departments(dept_no),
+    dept_no VARCHAR(30) REFERENCES Departments(dept_no),
     PRIMARY KEY (emp_no, dept_no)
 );
 
@@ -61,6 +61,6 @@ CREATE TABLE Dept_Emp (
 
 CREATE TABLE Dept_Manager (
     emp_no INT REFERENCES Employees(emp_no),
-    dept_no VARCHAR(25) REFERENCES Departments(dept_no),
+    dept_no VARCHAR(30) REFERENCES Departments(dept_no),
     PRIMARY KEY (emp_no, dept_no)
 );
