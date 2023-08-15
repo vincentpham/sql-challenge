@@ -37,7 +37,7 @@ CREATE TABLE Employees (
     birth_date DATE,
     first_name VARCHAR(30),
     last_name VARCHAR(30),
-    sex CHAR,
+    sex CHAR(1),
     hire_date DATE
 );
 
