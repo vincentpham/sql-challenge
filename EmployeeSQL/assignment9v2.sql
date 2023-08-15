@@ -13,6 +13,15 @@
     IS_TEMPLATE = False;
 */	
 
+/* 
+I'm having issues with importing the csv files for this assignment.
+I can import the titles and department csv files perfectly fine. But, when I get to the employees csv files for
+whatever reason I do not understand why it does not import.
+I understand I'm supposed to import under a certain order:
+    titles, departments, employees, salaries, dept_emp, and dept_manager in that order
+Because of the parent-child relationships with the foreign keys and columns involved
+My columns are matched up with the csv files 
+*/
 -- creating tables
 
 -- titles
