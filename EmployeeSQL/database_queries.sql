@@ -1,3 +1,5 @@
+-- Database: assignment9v6
+
 /* List Employee Details: Query the employee number, last name, first name, sex, and salary of each employee.
 
 Hired in 1986: List the first name, last name, and hire date for the employees who were hired in 1986.
@@ -17,16 +19,22 @@ Last Name Frequency: List the frequency counts, in descending order, of all the 
 
 -- checking tables schema
 -- also should be order of the import
+DROP TABLE IF EXISTS Dept_Manager;
+DROP TABLE IF EXISTS Dept_Emp;
+DROP TABLE IF EXISTS Salaries;
+DROP TABLE IF EXISTS Employees;
+DROP TABLE IF EXISTS Departments;
+DROP TABLE IF EXISTS Titles;
 
-SELECT * FROM public.titles
+SELECT * FROM public.titles;
 
-SELECT * FROM public.departments
+SELECT * FROM public.departments;
 
-SELECT * FROM public.employees
+SELECT * FROM public.employees;
 
-SELECT * FROM public.salaries
+SELECT * FROM public.salaries;
 
-SELECT * FROM public.dept_emp
+SELECT * FROM public.dept_emp;
 
 SELECT * FROM public.dept_manager
 
