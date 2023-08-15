@@ -15,3 +15,30 @@ Sales and Development Departments: List each employee in the Sales and Developme
 Last Name Frequency: List the frequency counts, in descending order, of all the employee last names (i.e., how many employees share each last name).
 */
 
+-- checking tables schema
+
+SELECT * FROM public.titles
+
+SELECT * FROM public.departments
+
+SELECT * FROM public.employees
+
+SELECT * FROM public.salaries
+
+SELECT * FROM public.dept_emp
+
+SELECT * FROM public.dept_manager
+
+
+
+
+-- hired in 1986
+-- list last name, first name, sex, salary
+
+-- list manager of each department, alongside dept number, dept name, employee
+
+-- list dept number for each employee alongside employee number, last name, first name, and dept name
+
+-- list first name, last name, sex of each employee whose last name begins with B
+
+-- 
