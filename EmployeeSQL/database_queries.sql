@@ -16,6 +16,7 @@ Last Name Frequency: List the frequency counts, in descending order, of all the 
 */
 
 -- checking tables schema
+-- also should be order of the import
 
 SELECT * FROM public.titles
 
@@ -28,8 +29,6 @@ SELECT * FROM public.salaries
 SELECT * FROM public.dept_emp
 
 SELECT * FROM public.dept_manager
-
-
 
 
 -- hired in 1986
